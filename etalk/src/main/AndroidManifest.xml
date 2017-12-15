@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.mistong.ewt.etalk">
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity android:name=".view.ETalkMainActivity">
+        </activity>
+        <activity android:name=".view.ETalkDetailActivity">
+        </activity>
+        <receiver android:name=".receiver.ETalkBroadcastReceiver">
+            <intent-filter >
+                <action android:name="com.mistong.ewt.base.EWT_BASE_INIT_ACTION"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
